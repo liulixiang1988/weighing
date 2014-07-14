@@ -18,7 +18,6 @@ type Tb_weigh_remark struct {
 	LastModifiedUserCode string `xorm:"varchar(64)"`
 	LastModifiedUserName string `xorm:"varchar(64)"`
 	LastModifiedTime     time.Time
-	Remark               string
 	Attribute1           string
 	Attribute2           string
 	Attribute3           string
