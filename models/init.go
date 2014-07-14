@@ -59,4 +59,39 @@ func init() {
 	if err != nil {
 		log.Fatalln("pq orm sync error:", err)
 	}
+
+	err = Pqorm.Sync(new(Tb_weigh_datalineinfo_detail))
+	if err != nil {
+		log.Fatalln("pq orm sync error:", err)
+	}
+
+	err = Pqorm.Sync(new(Tb_weigh_datalineinfo_detail_cache))
+	if err != nil {
+		log.Fatalln("pq orm sync error:", err)
+	}
+
+	err = Pqorm.Sync(new(Tb_weigh_datalineinfobak))
+	if err != nil {
+		log.Fatalln("pq orm sync error:", err)
+	}
+
+	err = Pqorm.Sync(new(Tb_weigh_datalineinfoiface))
+	if err != nil {
+		log.Fatalln("pq orm sync error:", err)
+	}
+
+	err = Pqorm.Sync(new(Tb_weigh_plan))
+	if err != nil {
+		log.Fatalln("pq orm sync error:", err)
+	}
+
+	err = Pqorm.Sync(new(Tb_weigh_remark))
+	if err != nil {
+		log.Fatalln("pq orm sync error:", err)
+	}
+
+	err = Pqorm.Sync(new(Tb_weigh_shift))
+	if err != nil {
+		log.Fatalln("pq orm sync error:", err)
+	}
 }
